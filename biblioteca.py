@@ -41,10 +41,12 @@ def texto_principal(texto, ):
         print(texto[j], end=" ")
 
 def verifica_lista(lista):
-    nova_lista= []
-    for i in range(len(lista)):
-        if nova_lista[i]!= lista[i]:
-            a= nova_lista.append
+    nova_lista = []
+    for i in lista:
+        if i not in nova_lista:
+            nova_lista.append(i)
+    print(nova_lista)
+
 
 
 
